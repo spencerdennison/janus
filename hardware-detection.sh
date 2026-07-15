@@ -2,9 +2,10 @@
 
 set -euo pipefail
 
+bat_info=$(ls /sys/class/power_supply/ | grep "BAT" || true)
 gpu_info=$(lspci | grep -iE "vga|3d|display" || true)
 
-if [[ "ls /sys/class/power_supply/ | grep "BAT" || true" == *BAT* ]]; then
+if [[ "$bat_info" ]]; then
     printf "Chassis: Laptop\n"
 else
     printf "Chassis: Desktop\n"
