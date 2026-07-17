@@ -15,4 +15,5 @@ source packages/paru.sh
 if [[ "$form_factor" == "desktop" ]]; then
     source packages/gaming.sh
 else
-    continue
+    log_info "Finished, reboot now!"
+fi
