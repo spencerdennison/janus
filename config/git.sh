@@ -7,7 +7,7 @@ if ! [[ "ls ~/ | grep ".gitconfig"" ]]; then
     git config --global user.email "$git_email"
     git config --global user.name "$git_username"
 else
-    log_skipping "Git config already exists"
+    log_skipping "gitconfig creation"
 fi
 
 read -p "Setup GitHub authentication? [Y/n]" $git_option
@@ -17,10 +17,10 @@ case "$git_option" in
         ;;  
 
     [nN]) 
-        log_skipping "no GitHub authentication needed" 
+        log_skipping "GitHub authentication" 
         ;;
 
     *)
-        log_error "invalid input please try again"
+        log_error "invalid input"
         ;;
 esac

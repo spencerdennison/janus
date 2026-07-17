@@ -8,5 +8,5 @@ if ! [[ "ls ~/ | grep ".config"" ]]; then
     cd ~/dotfiles
     stow .
 else
-    log_skipping "dotfiles repo already cloned"
+    log_skipping "dotfiles repo clone"
 fi
