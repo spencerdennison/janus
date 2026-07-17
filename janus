@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -euo pipefail
+
+source lib/log.sh
+source detect/system.sh 
+source detect/hardware.sh
+source setup/drivers.sh
+source setup/aur.sh
+source setup/ssh.sh
+source packages/base.sh
+source packages/development.sh
+source packages/paru.sh
+
+if [[ "$form_factor" == "desktop" ]]; then
+    source packages/gaming.sh
+else
+    continue
