@@ -1,3 +1,3 @@
 #!/bin/bash 
 
-paru -S librewolf-bin material-black-colors-theme xcursor-hackneyed-light --noconfirm
+paru -S librewolf-bin material-black-colors-theme tofi xcursor-hackneyed-light --noconfirm
