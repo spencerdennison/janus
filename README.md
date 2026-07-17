@@ -1,5 +1,7 @@
 # janus
 
-A Linux provisioning tool built for heterogeneous systems and minimalism.
+A provisioning tool for Arch Linux systems.
 
-## Features
+## To Do
+
+- Legacy NVIDIA GPU support, currently Turing - Blackwell, missing Volta - Curie
