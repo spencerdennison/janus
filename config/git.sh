@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if ! [[ "ls ~/ | grep ".gitconfig"" ]]; then 
-    read -p "Enter GitHub username: " $git_username
-    read -p "Enter GitHub email: " $git_email
+    read -p "Enter GitHub username: " "$git_username"
+    read -p "Enter GitHub email: " "$git_email"
 
     git config --global user.email "$git_email"
     git config --global user.name "$git_username"
