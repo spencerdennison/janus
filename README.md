@@ -1,6 +1,6 @@
 # janus
 
-Provisioning tool for Arch Linux systems.
+Provisioning tool for my Arch Linux system.
 
 ## To Do
 
