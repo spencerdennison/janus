@@ -6,4 +6,3 @@ Provisioning tool for my Arch Linux system.
 
 - Legacy NVIDIA GPU support, currently Turing - Blackwell, missing Volta - Curie
 - Hitting 'n' during package install prompt kills program
-- Remove .gitconfig setup, can store in dotfiles repository
