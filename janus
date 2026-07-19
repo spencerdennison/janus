@@ -15,5 +15,10 @@ source packages/paru.sh
 if [[ "$form_factor" == "desktop" ]]; then
     source packages/gaming.sh
 else
-    log_info "finished"
+    log_skipping "gaming packages not needed"
 fi
+
+source setup/git.sh
+source setup/tailscale.sh
+
+log_info "finished"
