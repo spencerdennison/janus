@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S steam gamescope
+paru -S steam gamescope
