@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ -d ~/dotfiles ]]; then
+if [[ -e ~/dotfiles ]]; then
     log_skipping "dotfiles repo clone"
 else
     rm -rf .bashrc
@@ -8,4 +8,4 @@ else
     git clone git@github.com:spencerdennison/dotfiles.git
     cd ~/dotfiles
     stow .
-fiee
+fi
