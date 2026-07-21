@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ -e ~/dotfiles ]]; then
+if [[ -d ~/dotfiles ]]; then
     log_skipping "dotfiles repo clone"
 else
     rm -rf .bashrc
