@@ -5,7 +5,7 @@ if [[ -e ~/dotfiles ]]; then
 else
     rm -rf .bashrc
     rm -rf .bash_profile
-    git clone git@github.com:spencerdennison/dotfiles.git
+    git clone https://github.com/spencerdennison/dotfiles.git
     cd ~/dotfiles
     stow .
 fi
