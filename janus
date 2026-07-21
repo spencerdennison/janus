@@ -17,3 +17,5 @@ source setup/tailscale.sh
 source setup/dotfiles.sh
 
 log_info "finished"
+
+rm -rf ~/janus
