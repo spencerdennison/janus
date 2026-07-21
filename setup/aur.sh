@@ -4,7 +4,6 @@ sudo pacman -S base-devel
 
 if [[ -f /tmp/paru ]]; then
     rm -rf /tmp/paru
-else
 fi
 
 if command -v paru > /dev/null; then
