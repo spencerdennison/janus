@@ -14,5 +14,6 @@ source packages/aur.sh
 source packages/gaming.sh
 source setup/git.sh
 source setup/tailscale.sh
+source setup/dotfiles.sh
 
 log_info "finished"
