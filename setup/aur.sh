@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [[ -f /tmp/paru ]]; then
+    rm -rf /tmp/paru
+else
+fi
+
 if command -v paru > /dev/null; then
     log_skipping "paru AUR helper install"
 else
