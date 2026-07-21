@@ -11,13 +11,7 @@ source packages/drivers.sh
 source packages/base.sh
 source packages/development.sh
 source packages/aur.sh
-
-if [[ "$form_factor" == "desktop" ]]; then
-    source packages/gaming.sh
-else
-    log_skipping "gaming packages not needed"
-fi
-
+source packages/gaming.sh
 source setup/git.sh
 source setup/tailscale.sh
 
