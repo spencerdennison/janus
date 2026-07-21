@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo pacman -S base-devel
+
 if [[ -f /tmp/paru ]]; then
     rm -rf /tmp/paru
 else
