@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S openssh
+paru -S openssh --noconfirm
 
 if [[ -f ~/.ssh/git ]]; then
     log_skipping "Git SSH key creation"
