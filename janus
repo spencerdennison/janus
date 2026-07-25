@@ -16,6 +16,5 @@ source setup/git.sh
 source setup/tailscale.sh
 source setup/dotfiles.sh
 
-log_info "finished"
-
+log_info "janus finished"
 rm -rf ~/janus
