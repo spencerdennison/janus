@@ -1,15 +1,18 @@
+#!/bin/bash
+
 gpu_info=$(lspci | grep -E "VGA|3D|Display")
+gpu_info=${gpu_info,,}
 
 case "$gpu_info" in
-    *NVIDIA*|*nvidia*)
+    *nvidia*)
         gpu_vendor=nvidia
         ;;
 
-    *AMD*|*ATI*|*amd*|*ati*)
+    *amd*|*ati*)
         gpu_vendor=amd
         ;;
 
-    *Intel*|*intel*)
+    *intel*)
         gpu_vendor=intel
         ;;
 
