@@ -1,8 +1,8 @@
 #!/bin/bash
 
-paru -S openssh --noconfirm
+sudo pacman -S openssh
 
-if [ -e ~/.ssh/git ]; then
+if [[ -e "~/.ssh/git" ]]; then
     log_skipping "Git SSH key creation"
 else
     ssh-keygen -t ed25519 -f ~/.ssh/git
