@@ -1,6 +1,8 @@
 #!/bin/bash
 
-if grep -qi "^ID_LIKE=arch$" /etc/os-release; then
+source lib/log.sh
+
+if grep -qi "^ID=arch" /etc/os-release; then
     distro=arch
     log_info "Distro: $distro"
 else
