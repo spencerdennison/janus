@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S git github-cli npm tmux vim
+sudo pacman -S git github-cli npm tmux vim --noconfirm
