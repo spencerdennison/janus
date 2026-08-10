@@ -4,7 +4,7 @@ read -p "Install gaming packages? [Y/n] " gaming_option
 
 case "$gaming_option" in
     [yY]|"")
-        sudo pacman -S steam gamescope
+        sudo pacman -S steam gamescope --noconfirm
         ;;
 
     [nN])
