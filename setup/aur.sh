@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S base-devel
+sudo pacman -S base-devel --noconfirm
 
 if [[ -e /tmp/paru ]]; then
     rm -rf /tmp/paru
