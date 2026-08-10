@@ -2,15 +2,15 @@
 
 case $gpu_vendor in
     "amd")
-        sudo pacman -S lib32-mesa lib32-vulkan-radeon mesa vulkan-radeon
+        sudo pacman -S lib32-mesa lib32-vulkan-radeon mesa vulkan-radeon --noconfirm
         ;;
 
     "nvidia")
-        sudo pacman -S lib32-nvidia-utils nvidia-open-dkms
+        sudo pacman -S lib32-nvidia-utils nvidia-open-dkms --noconfirm
         ;;
 
     "intel")
-        sudo pacman -S lib32-mesa lib32-vulkan-intel mesa vulkan-intel
+        sudo pacman -S lib32-mesa lib32-vulkan-intel mesa vulkan-intel --noconfirm
         ;;
 
     "none" | "unknown")
