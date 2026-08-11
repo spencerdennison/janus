@@ -3,19 +3,17 @@
 set -euo pipefail
 
 source lib/log.sh
-source lib/distro.sh 
-source lib/form-factor.sh
-source lib/gpu.sh
-source setup/aur.sh
-source setup/ssh.sh
-source packages/drivers.sh
-source packages/base.sh
-source packages/development.sh
-source packages/aur.sh
-source packages/gaming.sh
-source setup/git.sh
-source setup/tailscale.sh
-source setup/dotfiles.sh
 
-log_info "janus finished"
-rm -rf ~/janus
+log_info "Starting: janus"
+
+source lib/system.sh 
+source lib/packages.sh
+source lib/aur.sh
+source lib/ssh.sh
+source lib/git.sh
+source lib/dotfiles.sh
+source lib/tailscale.sh
+
+rm --force --recursive $HOME/janus
+
+log_info "Finished: janus"
