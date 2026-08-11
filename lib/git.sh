@@ -2,7 +2,7 @@
 
 log_info "starting: git.sh"
 
-read -prompt "setup GitHub auth? [Y/n] " git_option
+read -p "setup GitHub auth? [Y/n] " git_option
 case "$git_option" in
     [yY]|"") 
         gh auth login 
