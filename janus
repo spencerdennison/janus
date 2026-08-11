@@ -10,7 +10,6 @@ source lib/system.sh
 source lib/packages.sh
 source lib/aur.sh
 source lib/ssh.sh
-source lib/git.sh
 source lib/dotfiles.sh
 source lib/tailscale.sh
 
