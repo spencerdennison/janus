@@ -16,6 +16,6 @@ else
     rm --force --recursive /tmp/paru
 fi
 
-paru --sync librewolf-hellfire-bin material-black-colors-theme tofi xcursor-hackneyed-light --noconfirm
+paru --sync brave-bin tofi opencl-amd xcursor-hackneyed-light --noconfirm
 
 log_info "finished: paru.sh"
