@@ -2,7 +2,7 @@
 
 log_info "starting: packages.sh"
 
-sudo pacman --sync base-devel bash-completion brightnessctl btop chezmoi discord foot gimp \
+sudo pacman --sync base-devel bash-completion boinc boinctui brightnessctl btop chezmoi discord foot gimp \
     git github-cli grim less mako man-db noto-fonts noto-fonts-emoji npm openssh slurp stow \
     swappy sway tailscale tmux tree ttf-jetbrains-mono-nerd vim waybar wiremix wl-clipboard \
     xdg-desktop-portal-gtk xdg-desktop-portal-wlr --noconfirm
